@@ -3,7 +3,7 @@ services:
   - docker
 
 before_intall:
-  - docker build -t maunconsultancy/docker-react-f Deckerfile.dev .
+  - docker build -t maunconsultancy/docker-react -f Dockerfile.dev .
 
 script:
   - docker run maunconsultancy/docker-react npm run test -- --coverage
